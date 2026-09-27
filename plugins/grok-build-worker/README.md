@@ -22,13 +22,8 @@ The MCP server ships source under `mcp/` without `node_modules`. After install (
 ```bash
 # Plugin root is shown by `grok plugin details grok-build-worker`
 cd "$(dirname "$(find ~/.grok -path '*grok-build-worker/mcp/package.json' 2>/dev/null | head -1)")"
-npm ci
-```
-
-Or from the installed plugin path:
-
-```bash
-cd <plugin-root>/mcp && npm ci
+npm install
+# If package-lock.json is present: npm ci
 ```
 
 Requires Node.js 18+ on PATH. The `.mcp.json` runs:
@@ -48,6 +43,7 @@ node ${CLAUDE_PLUGIN_ROOT}/mcp/server.js
 
 ## Notes
 
-- Jobs write artifacts under `/workspace/jobs/<job_id>/` by default (override with env if the server supports it).
+- Jobs write artifacts under `/workspace/jobs/<job_id>/` by default.
 - Do **not** commit `node_modules`, secrets, or a fleet file with host IPs into this plugin.
+- `mcp/server.js` on this marketplace may be esbuild-minified for publish size. Readable `server.js` + full `package-lock.json` are on the public mirror: https://github.com/BotOTNworld/grok-plugins (same plugin path).
 - Cursor marketplace packaging is a separate, later path — this repo is for the **Grok CLI** marketplace.
