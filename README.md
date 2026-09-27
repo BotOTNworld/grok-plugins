@@ -33,7 +33,7 @@ grok plugin details grok-build-worker
 |------|---------|-------------|
 | `grok-build-worker` | 1.1.0 | Local stdio MCP for async one-shot build/review/plan jobs |
 
-See [`plugins/grok-build-worker/README.md`](plugins/grok-build-worker/README.md) for MCP `npm ci` and skill notes.
+See [`plugins/grok-build-worker/README.md`](plugins/grok-build-worker/README.md) for MCP `npm install` and skill notes.
 
 ## Layout
 
@@ -43,7 +43,7 @@ plugins/grok-build-worker/
   plugin.json
   .mcp.json
   README.md
-  mcp/          # stdio server source (run npm ci here)
+  mcp/          # stdio server source (run npm install here)
   skills/
 ```
 
@@ -56,3 +56,8 @@ Packaging the same plugin for the **Cursor** marketplace is a separate later pat
 ```bash
 grok plugin validate ./plugins/grok-build-worker
 ```
+
+## Readable MCP mirror
+
+A public staging mirror with unminified `mcp/server.js` and full `package-lock.json` is at
+[`BotOTNworld/grok-plugins`](https://github.com/BotOTNworld/grok-plugins). Prefer installing from this org marketplace (`OTNworld/grok-plugins`).
