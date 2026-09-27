@@ -8,8 +8,6 @@ Grok CLI plugin marketplace for the OTNworld org.
 grok plugin marketplace add OTNworld/grok-plugins
 ```
 
-Private repos use your normal GitHub credentials (`gh auth` / git credential helper).
-
 ## Install a plugin
 
 ```bash
@@ -61,3 +59,7 @@ grok plugin validate ./plugins/grok-build-worker
 
 A public staging mirror with unminified `mcp/server.js` and full `package-lock.json` is at
 [`BotOTNworld/grok-plugins`](https://github.com/BotOTNworld/grok-plugins). Prefer installing from this org marketplace (`OTNworld/grok-plugins`).
+
+## License
+
+MIT — see [LICENSE](LICENSE).
