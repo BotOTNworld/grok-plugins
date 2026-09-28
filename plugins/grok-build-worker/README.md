@@ -1,6 +1,6 @@
 # Grok build worker
 
-Local stdio MCP plugin that runs one-shot Grok Build jobs on the host.
+Run one-shot Grok Build jobs from the CLI: submit, poll status, fetch artifacts, and cancel. Local stdio MCP for agents and automation.
 
 **Tools:** `submit_job`, `status`, `fetch_artifacts`, `cancel_job`
 

@@ -1,8 +1,6 @@
 ---
 name: Grok build CLI capabilities
-description: >-
-  Use when composing a grok-build-worker submit_job: profiles, flags, and
-  the job envelope.
+description: Use when composing a grok-build-worker submit_job: choose a profile, CLI flags, and the job envelope.
 ---
 # Grok build CLI capabilities
 

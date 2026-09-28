@@ -8,10 +8,10 @@
   "plugins": [
     {
       "name": "grok-build-worker",
-      "description": "Local stdio MCP for one-shot Grok Build jobs (submit_job, status, fetch_artifacts, cancel_job)",
+      "description": "Grok Build worker for agents: queue a build/review/plan job on your machine, track status, pull artifacts, and cancel safely. Four MCP tools (submit_job, status, fetch_artifacts, cancel_job) plus skills for job profiles and flags.",
       "version": "1.5.2",
       "category": "development",
-      "tags": ["build", "mcp", "grok"],
+      "tags": ["build", "mcp", "grok", "worker", "jobs"],
       "source": { "type": "local", "path": "./plugins/grok-build-worker" }
     }
   ]

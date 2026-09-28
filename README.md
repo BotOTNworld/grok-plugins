@@ -11,6 +11,6 @@ grok plugin install grok-build-worker --trust
 
 | Name | Version | Description |
 |------|---------|-------------|
-| `grok-build-worker` | 1.5.2 | Local stdio MCP for one-shot build/review/plan jobs |
+| `grok-build-worker` | 1.5.2 | Run one-shot Grok Build jobs from the CLI: submit, poll status, fetch artifacts, and cancel |
 
 License: MIT — [LICENSE](LICENSE).

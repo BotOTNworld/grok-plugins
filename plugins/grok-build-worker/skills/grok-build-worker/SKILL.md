@@ -1,8 +1,6 @@
 ---
 name: Grok build worker
-description: >-
-  Use when implementing or reviewing code via the grok-build-worker MCP
-  (submit_job, status, fetch_artifacts, cancel_job).
+description: Use when an agent should submit, track, fetch artifacts from, or cancel a one-shot build, review, or plan job on the grok-build-worker MCP.
 ---
 # Grok build worker
 

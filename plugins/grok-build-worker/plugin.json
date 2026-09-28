@@ -1,9 +1,14 @@
 {
   "name": "grok-build-worker",
   "version": "1.5.2",
-  "description": "Local stdio MCP for one-shot Grok Build jobs (submit_job, status, fetch_artifacts, cancel_job)",
-  "author": { "name": "OTNworld" },
+  "description": "Run one-shot Grok Build jobs from the CLI: submit, poll status, fetch artifacts, and cancel. Local stdio MCP for agents and automation.",
+  "author": {
+    "name": "OTNworld",
+    "url": "https://github.com/OTNworld"
+  },
   "homepage": "https://github.com/OTNworld/grok-plugins",
+  "repository": "https://github.com/OTNworld/grok-plugins",
+  "license": "MIT",
   "keywords": ["build", "mcp", "worker", "grok"],
   "logo": "assets/logo.svg"
 }
